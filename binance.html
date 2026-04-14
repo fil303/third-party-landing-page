@@ -39,6 +39,7 @@
         </a>
         <nav class="hidden items-center gap-8 text-sm text-white/75 md:flex">
           <a href="#markets" class="transition hover:text-brand">Markets</a>
+          <a href="#charts" class="transition hover:text-brand">Charts</a>
           <a href="#products" class="transition hover:text-brand">Products</a>
           <a href="#security" class="transition hover:text-brand">Security</a>
           <a href="#learn" class="transition hover:text-brand">Learn</a>
@@ -213,6 +214,79 @@
         </div>
       </section>
 
+      <section id="charts" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-3xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Live Charts</p>
+            <h2 class="mt-3 text-3xl font-black">Track Binance pairs without leaving the landing page</h2>
+            <p class="mt-4 text-white/70">Use the market widget to browse major Binance pairs, then open the full chart below and search any other Binance symbol directly from the TradingView symbol bar.</p>
+          </div>
+          <a href="https://www.binance.com/en/markets/overview" target="_blank" rel="noopener noreferrer" class="w-fit rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/80 transition hover:border-brand hover:text-brand">Open Binance Markets</a>
+        </div>
+
+        <div class="mt-10 rounded-[2rem] border border-white/10 bg-panel p-4 shadow-glow sm:p-6">
+          <div class="mb-5 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p class="text-sm font-semibold text-white">Binance Pair Finder</p>
+              <p class="text-sm text-white/55">Quick market scan for core spot pairs.</p>
+            </div>
+            <p class="text-xs uppercase tracking-[0.25em] text-brand/80">TradingView Widget</p>
+          </div>
+          <div class="overflow-hidden rounded-3xl border border-white/10 bg-ink p-2">
+            <div class="tradingview-widget-container">
+              <div class="tradingview-widget-container__widget"></div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+              {
+              "width": "100%",
+              "height": 520,
+              "symbolsGroups": [
+                {
+                  "name": "Binance Majors",
+                  "originalName": "Binance",
+                  "symbols": [
+                    { "name": "BINANCE:BTCUSDT", "displayName": "BTC/USDT" },
+                    { "name": "BINANCE:ETHUSDT", "displayName": "ETH/USDT" },
+                    { "name": "BINANCE:BNBUSDT", "displayName": "BNB/USDT" },
+                    { "name": "BINANCE:SOLUSDT", "displayName": "SOL/USDT" },
+                    { "name": "BINANCE:XRPUSDT", "displayName": "XRP/USDT" }
+                  ]
+                },
+                {
+                  "name": "Momentum",
+                  "originalName": "Momentum",
+                  "symbols": [
+                    { "name": "BINANCE:DOGEUSDT", "displayName": "DOGE/USDT" },
+                    { "name": "BINANCE:ADAUSDT", "displayName": "ADA/USDT" },
+                    { "name": "BINANCE:AVAXUSDT", "displayName": "AVAX/USDT" },
+                    { "name": "BINANCE:LINKUSDT", "displayName": "LINK/USDT" },
+                    { "name": "BINANCE:TRXUSDT", "displayName": "TRX/USDT" }
+                  ]
+                }
+              ],
+              "showSymbolLogo": true,
+              "isTransparent": true,
+              "colorTheme": "dark",
+              "locale": "en"
+              }
+              </script>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 rounded-[2rem] border border-white/10 bg-gradient-to-br from-panel to-soft p-4 shadow-glow sm:p-6">
+          <div class="mb-5 flex flex-col gap-2 lg:flex-row lg:items-center lg:justify-between">
+            <div class="max-w-2xl">
+              <p class="text-sm font-semibold text-white">Advanced Market Chart</p>
+              <p class="text-sm text-white/55">The search control inside the chart lets users switch to other Binance pairs and inspect them in the same section.</p>
+            </div>
+            <a href="https://www.binance.com/en/trade/BTC_USDT" target="_blank" rel="noopener noreferrer" class="w-fit rounded-full bg-brand px-5 py-3 text-sm font-semibold text-ink transition hover:scale-[1.02]">Trade Current Pair</a>
+          </div>
+          <div class="overflow-hidden rounded-3xl border border-white/10 bg-ink">
+            <div id="tradingview_binance_chart" class="h-[520px] w-full"></div>
+          </div>
+        </div>
+      </section>
+
       <section id="products" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div class="max-w-2xl">
           <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Products</p>
@@ -370,5 +444,26 @@
       </div>
     </footer>
   </div>
+  <script src="https://s3.tradingview.com/tv.js"></script>
+  <script>
+    if (window.TradingView) {
+      new TradingView.widget({
+        autosize: true,
+        symbol: "BINANCE:BTCUSDT",
+        interval: "240",
+        timezone: "Etc/UTC",
+        theme: "dark",
+        style: "1",
+        locale: "en",
+        enable_publishing: false,
+        allow_symbol_change: true,
+        hide_side_toolbar: false,
+        withdateranges: true,
+        details: true,
+        calendar: false,
+        container_id: "tradingview_binance_chart"
+      });
+    }
+  </script>
 </body>
 </html>
