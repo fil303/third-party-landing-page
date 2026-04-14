@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binance Style Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: "#f0b90b",
+            ink: "#0b0e11",
+            panel: "#181a20",
+            soft: "#1e2329",
+            line: "#2b3139"
+          },
+          boxShadow: {
+            glow: "0 0 0 1px rgba(240,185,11,0.18), 0 18px 60px rgba(240,185,11,0.10)"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-ink text-white antialiased">
+  <div class="min-h-screen overflow-x-hidden">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,_rgba(240,185,11,0.18),_transparent_28%),radial-gradient(circle_at_left,_rgba(240,185,11,0.08),_transparent_22%)]"></div>
+
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-ink/85 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
+        <a href="https://www.binance.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+          <div class="grid h-10 w-10 place-items-center rounded-xl bg-brand text-lg font-black text-ink">B</div>
+          <div>
+            <p class="text-lg font-bold tracking-wide">Binance Style</p>
+            <p class="text-xs text-white/55">Large promo landing page</p>
+          </div>
+        </a>
+        <nav class="hidden items-center gap-8 text-sm text-white/75 md:flex">
+          <a href="#markets" class="transition hover:text-brand">Markets</a>
+          <a href="#products" class="transition hover:text-brand">Products</a>
+          <a href="#security" class="transition hover:text-brand">Security</a>
+          <a href="#learn" class="transition hover:text-brand">Learn</a>
+          <a href="#faq" class="transition hover:text-brand">FAQ</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="https://www.binance.com/en/download" target="_blank" rel="noopener noreferrer" class="hidden rounded-full border border-white/15 px-4 py-2 text-sm text-white/80 transition hover:border-brand hover:text-brand sm:inline-flex">Download</a>
+          <a href="https://www.binance.com/en" target="_blank" rel="noopener noreferrer" class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-ink transition hover:scale-[1.02]">Open Binance</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto grid max-w-7xl gap-12 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-20">
+        <div class="flex flex-col justify-center">
+          <div class="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-brand/25 bg-brand/10 px-4 py-2 text-sm text-brand">
+            <span class="h-2 w-2 rounded-full bg-brand"></span>
+            Binance-inspired exchange landing page built with Tailwind CDN
+          </div>
+          <h1 class="max-w-3xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
+            Trade, earn, and explore crypto with a bold Binance-style experience.
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
+            This page is an original large-format landing page inspired by the public Binance homepage structure:
+            headline, market highlights, trust signals, app promotion, learning blocks, and FAQs. All major action
+            buttons route directly to Binance.
+          </p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="https://www.binance.com/en" target="_blank" rel="noopener noreferrer" class="rounded-full bg-brand px-7 py-4 text-center font-semibold text-ink transition hover:scale-[1.02]">
+              Go To Binance
+            </a>
+            <a href="https://www.binance.com/en/markets/overview" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-7 py-4 text-center font-semibold text-white/85 transition hover:border-brand hover:text-brand">
+              View Markets
+            </a>
+          </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-2xl border border-white/10 bg-panel p-5">
+              <p class="text-sm text-white/55">Users Trust</p>
+              <p class="mt-2 text-3xl font-black text-brand">314M+</p>
+              <p class="mt-2 text-sm text-white/60">Large exchange-style social proof section with clean KPI presentation.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-panel p-5">
+              <p class="text-sm text-white/55">Trading Focus</p>
+              <p class="mt-2 text-3xl font-black text-brand">24/7</p>
+              <p class="mt-2 text-sm text-white/60">Market cards, CTA buttons, and product blocks designed for high intent traffic.</p>
+            </div>
+            <div class="rounded-2xl border border-white/10 bg-panel p-5">
+              <p class="text-sm text-white/55">Theme Style</p>
+              <p class="mt-2 text-3xl font-black text-brand">Black + Gold</p>
+              <p class="mt-2 text-sm text-white/60">The layout keeps the familiar exchange aesthetic without copying the original source.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -left-10 top-12 h-32 w-32 rounded-full bg-brand/20 blur-3xl"></div>
+          <div class="absolute -right-8 bottom-8 h-40 w-40 rounded-full bg-brand/10 blur-3xl"></div>
+          <div class="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-panel to-soft p-6 shadow-glow">
+            <div class="rounded-3xl border border-white/10 bg-ink p-6">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Quick Access</p>
+                  <h2 class="mt-3 text-2xl font-black">Start with the exchange funnel</h2>
+                </div>
+                <span class="rounded-full border border-brand/20 bg-brand/10 px-3 py-1 text-xs font-medium text-brand">Live Theme</span>
+              </div>
+              <div class="mt-6 space-y-4">
+                <div class="rounded-2xl border border-white/10 bg-panel p-4">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <p class="font-semibold">Buy Crypto</p>
+                      <p class="text-sm text-white/55">Card, wallet, and exchange routes</p>
+                    </div>
+                    <a href="https://www.binance.com/en/buy-sell-crypto" target="_blank" rel="noopener noreferrer" class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Open</a>
+                  </div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-panel p-4">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <p class="font-semibold">Trade Markets</p>
+                      <p class="text-sm text-white/55">Spot, margin, futures, and gainers</p>
+                    </div>
+                    <a href="https://www.binance.com/en/markets/overview" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/85">Explore</a>
+                  </div>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-panel p-4">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <p class="font-semibold">Download App</p>
+                      <p class="text-sm text-white/55">Mobile and desktop download destination</p>
+                    </div>
+                    <a href="https://www.binance.com/en/download" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-4 py-2 text-sm font-semibold text-white/85">Install</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mt-6 grid grid-cols-3 gap-3">
+                <div class="rounded-2xl border border-white/10 bg-panel p-4 text-center">
+                  <p class="text-xs text-white/50">Spot</p>
+                  <p class="mt-2 text-xl font-bold">BTC</p>
+                  <p class="text-sm text-emerald-400">+4.96%</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-panel p-4 text-center">
+                  <p class="text-xs text-white/50">Layer 1</p>
+                  <p class="mt-2 text-xl font-bold">BNB</p>
+                  <p class="text-sm text-emerald-400">+3.54%</p>
+                </div>
+                <div class="rounded-2xl border border-white/10 bg-panel p-4 text-center">
+                  <p class="text-xs text-white/50">DeFi</p>
+                  <p class="mt-2 text-xl font-bold">ETH</p>
+                  <p class="text-sm text-emerald-400">+8.04%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="markets" class="border-y border-white/10 bg-white/[0.02]">
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Market Snapshot</p>
+              <h2 class="mt-3 text-3xl font-black">Popular markets and fast-entry routes</h2>
+            </div>
+            <a href="https://www.binance.com/en/markets/overview" target="_blank" rel="noopener noreferrer" class="w-fit rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/80 transition hover:border-brand hover:text-brand">Open Market Overview</a>
+          </div>
+          <div class="mt-10 grid gap-5 lg:grid-cols-2 xl:grid-cols-4">
+            <article class="rounded-3xl border border-white/10 bg-panel p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-white/55">BTC / USDT</p>
+                  <h3 class="mt-2 text-2xl font-black">$74,481.70</h3>
+                </div>
+                <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-400">+4.96%</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/65">High visibility hero market card that mirrors the exchange feel and pushes users into live Binance trading pages.</p>
+              <a href="https://www.binance.com/en/trade/BTC_USDT" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Trade BTC</a>
+            </article>
+            <article class="rounded-3xl border border-white/10 bg-panel p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-white/55">ETH / USDT</p>
+                  <h3 class="mt-2 text-2xl font-black">$2,368.95</h3>
+                </div>
+                <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-400">+8.04%</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/65">Secondary market module with concise product copy, intended to make the page feel larger and more content-rich.</p>
+              <a href="https://www.binance.com/en/trade/ETH_USDT" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Trade ETH</a>
+            </article>
+            <article class="rounded-3xl border border-white/10 bg-panel p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-white/55">BNB / USDT</p>
+                  <h3 class="mt-2 text-2xl font-black">$615.90</h3>
+                </div>
+                <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-400">+3.54%</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/65">The page uses Binance-style colors, density, metrics, and call-to-actions while staying an original HTML composition.</p>
+              <a href="https://www.binance.com/en/trade/BNB_USDT" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Trade BNB</a>
+            </article>
+            <article class="rounded-3xl border border-white/10 bg-panel p-6">
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-sm text-white/55">XRP / USDT</p>
+                  <h3 class="mt-2 text-2xl font-black">$1.37</h3>
+                </div>
+                <span class="rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-400">+3.16%</span>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-white/65">Large cards give the file enough depth to function as a standalone long landing page instead of a simple hero mockup.</p>
+              <a href="https://www.binance.com/en/trade/XRP_USDT" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Trade XRP</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div class="max-w-2xl">
+          <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Products</p>
+          <h2 class="mt-3 text-3xl font-black">Expanded content blocks for a larger exchange-style page</h2>
+          <p class="mt-4 text-white/70">The original Binance homepage uses multiple product entry points. This section adds more context and more depth so your local file feels complete and substantial.</p>
+        </div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <h3 class="text-2xl font-bold">Spot Trading</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Direct access to real-time crypto pairs, clean chart entry links, and familiar exchange positioning for high-conversion landing sections.</p>
+            <a href="https://www.binance.com/en/markets/spot" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Open Spot</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <h3 class="text-2xl font-bold">Futures</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">A dedicated derivative-style card that matches the visual hierarchy common to crypto exchange promotion pages.</p>
+            <a href="https://www.binance.com/en/futures" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Open Futures</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <h3 class="text-2xl font-bold">Earn</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Adds retention-oriented product messaging so the page includes more than only trade-related content and feels closer to a full ecosystem.</p>
+            <a href="https://www.binance.com/en/earn" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Open Earn</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <h3 class="text-2xl font-bold">P2P</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Peer-to-peer exchange content makes the page broader and gives visitors more navigational depth across Binance services.</p>
+            <a href="https://p2p.binance.com/en" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Open P2P</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <h3 class="text-2xl font-bold">Academy</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Education sections help large landing pages feel credible. This block redirects users to Binance’s learning ecosystem.</p>
+            <a href="https://academy.binance.com/en" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Open Academy</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <h3 class="text-2xl font-bold">Download Apps</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Cross-platform app download promotion mirrors a visible section on the public site and adds another useful conversion entry point.</p>
+            <a href="https://www.binance.com/en/download" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex rounded-full bg-brand px-4 py-2 text-sm font-semibold text-ink">Get App</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="security" class="border-y border-white/10 bg-gradient-to-r from-brand/10 via-transparent to-brand/5">
+        <div class="mx-auto grid max-w-7xl gap-8 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Security Context</p>
+            <h2 class="mt-3 text-3xl font-black">Trust, reserves, asset protection, and user-first framing</h2>
+            <p class="mt-4 max-w-xl text-white/70">Binance’s current homepage includes fund safety and trust-oriented copy. This section expands that theme with extra explanatory context so the page reads like a substantial branded landing page.</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-sm text-white/55">Fund Safety</p>
+              <h3 class="mt-3 text-xl font-bold">SAFU-inspired trust block</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">A long-form landing page benefits from trust modules that explain reserves, risk awareness, and emergency asset protection narratives.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-sm text-white/55">Proof Signals</p>
+              <h3 class="mt-3 text-xl font-bold">Transparent operating story</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">The visual density here keeps the design aligned with fintech and exchange product marketing instead of a minimal brochure layout.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-sm text-white/55">Fast Recovery</p>
+              <h3 class="mt-3 text-xl font-bold">User-support framing</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">This card extends the safety narrative and gives the page more reading depth and more clear trust-oriented hierarchy.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-sm text-white/55">Verification</p>
+              <h3 class="mt-3 text-xl font-bold">Secure onboarding message</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">Including onboarding and verification themes makes the page feel closer to a production crypto exchange acquisition funnel.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="learn" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Learn</p>
+            <h2 class="mt-3 text-3xl font-black">News, guides, and platform exploration</h2>
+            <p class="mt-4 text-white/70">To make the page larger, this section adds editorial-style cards with educational and product-discovery context, each linked back to Binance destinations.</p>
+          </div>
+          <a href="https://academy.binance.com/en" target="_blank" rel="noopener noreferrer" class="w-fit rounded-full border border-white/15 px-5 py-3 text-sm font-semibold text-white/80 transition hover:border-brand hover:text-brand">Visit Binance Academy</a>
+        </div>
+        <div class="mt-10 grid gap-5 lg:grid-cols-3">
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <p class="text-sm text-brand">Guide</p>
+            <h3 class="mt-3 text-2xl font-bold">How to buy crypto</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">A simple onboarding explainer section keeps first-time users engaged and makes the page more informative and conversion-friendly.</p>
+            <a href="https://www.binance.com/en/buy-sell-crypto" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-semibold text-brand">Start buying</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <p class="text-sm text-brand">Markets</p>
+            <h3 class="mt-3 text-2xl font-bold">Track live prices</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Useful for recreating the exchange homepage feel, this content block anchors the page around real-time trading interest and price discovery.</p>
+            <a href="https://www.binance.com/en/price" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-semibold text-brand">View prices</a>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-panel p-7">
+            <p class="text-sm text-brand">App</p>
+            <h3 class="mt-3 text-2xl font-bold">Trade on the go</h3>
+            <p class="mt-4 text-sm leading-7 text-white/65">Mobile-first exchange promotion is a key part of the original public site’s conversion strategy, so it belongs in this larger file too.</p>
+            <a href="https://www.binance.com/en/download" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-semibold text-brand">Download now</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="border-y border-white/10 bg-white/[0.02]">
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+          <div class="grid gap-5 lg:grid-cols-4">
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-4xl font-black text-brand">01</p>
+              <h3 class="mt-4 text-xl font-bold">Hero with stronger context</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">The hero area is larger than a minimal clone and includes explanation so the page feels custom rather than generic.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-4xl font-black text-brand">02</p>
+              <h3 class="mt-4 text-xl font-bold">Long-form product grid</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">Extra product and trust sections create a broad information architecture typical of a large commercial landing page.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-4xl font-black text-brand">03</p>
+              <h3 class="mt-4 text-xl font-bold">Binance-linked CTAs</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">Every major action route sends the user to Binance pages including markets, academy, futures, and downloads.</p>
+            </div>
+            <div class="rounded-3xl border border-white/10 bg-panel p-6">
+              <p class="text-4xl font-black text-brand">04</p>
+              <h3 class="mt-4 text-xl font-bold">Tailwind CDN only</h3>
+              <p class="mt-3 text-sm leading-7 text-white/65">No build step is required. The file runs as a single static HTML document using the Tailwind CDN configuration in the head.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-sm uppercase tracking-[0.3em] text-brand/80">FAQ</p>
+          <h2 class="mt-3 text-3xl font-black">Questions users usually ask on exchange landing pages</h2>
+        </div>
+        <div class="mt-10 space-y-4">
+          <details class="rounded-3xl border border-white/10 bg-panel p-6">
+            <summary class="cursor-pointer text-lg font-semibold">Does this page copy Binance source HTML?</summary>
+            <p class="mt-4 max-w-4xl text-sm leading-7 text-white/65">No. It is an original static page that borrows the general structure and visual mood of a crypto exchange landing page while linking users to Binance destinations.</p>
+          </details>
+          <details class="rounded-3xl border border-white/10 bg-panel p-6">
+            <summary class="cursor-pointer text-lg font-semibold">Where do the buttons redirect?</summary>
+            <p class="mt-4 max-w-4xl text-sm leading-7 text-white/65">The primary buttons point to Binance URLs such as the homepage, market overview, trade pairs, Academy, Buy Crypto, Futures, and Download pages.</p>
+          </details>
+          <details class="rounded-3xl border border-white/10 bg-panel p-6">
+            <summary class="cursor-pointer text-lg font-semibold">Can this file be opened directly in a browser?</summary>
+            <p class="mt-4 max-w-4xl text-sm leading-7 text-white/65">Yes. It uses the Tailwind CDN and does not require a local build step. Open the file directly and the page will render as a complete standalone landing page.</p>
+          </details>
+          <details class="rounded-3xl border border-white/10 bg-panel p-6">
+            <summary class="cursor-pointer text-lg font-semibold">Can the whole page auto-redirect to Binance?</summary>
+            <p class="mt-4 max-w-4xl text-sm leading-7 text-white/65">It can, but that would make the large landing page pointless. This version keeps the content visible and uses direct Binance links for meaningful actions instead.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+        <div class="rounded-[2rem] border border-brand/20 bg-gradient-to-r from-brand via-[#ffd666] to-brand p-[1px]">
+          <div class="rounded-[calc(2rem-1px)] bg-ink px-8 py-12 text-center">
+            <p class="text-sm uppercase tracking-[0.3em] text-brand/80">Final CTA</p>
+            <h2 class="mt-3 text-3xl font-black text-white sm:text-4xl">Launch into Binance from this custom landing page</h2>
+            <p class="mx-auto mt-4 max-w-2xl text-white/70">A larger, content-heavy Binance-style page with a Tailwind CDN setup and repeated exchange entry points for users who want to move directly into the live platform.</p>
+            <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+              <a href="https://www.binance.com/en" target="_blank" rel="noopener noreferrer" class="rounded-full bg-brand px-7 py-4 font-semibold text-ink transition hover:scale-[1.02]">Open Binance Homepage</a>
+              <a href="https://www.binance.com/en/register" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/15 px-7 py-4 font-semibold text-white/85 transition hover:border-brand hover:text-brand">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-black/20">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-white/50 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>Original promotional page inspired by Binance public page structure.</p>
+        <div class="flex flex-wrap gap-5">
+          <a href="https://www.binance.com/en" target="_blank" rel="noopener noreferrer" class="transition hover:text-brand">Binance Home</a>
+          <a href="https://www.binance.com/en/markets/overview" target="_blank" rel="noopener noreferrer" class="transition hover:text-brand">Markets</a>
+          <a href="https://academy.binance.com/en" target="_blank" rel="noopener noreferrer" class="transition hover:text-brand">Academy</a>
+          <a href="https://www.binance.com/en/download" target="_blank" rel="noopener noreferrer" class="transition hover:text-brand">Download</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
